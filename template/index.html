@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Product Llsts
+{% endblock  %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid py-2">
+    <div class="container-fluid">
+        <h1 class="display-1">Products</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+        {% for product in Products%
+            <div class="card">
+            <img src="{{product.image_url}}" class="card-img-top">}
+            <div class="card-body">
+            <h>
+            
+       </div>
+    </div>
+    <div class="container-fluid">
+        <ul>
+        {% for product in Products  %}
+            <li>{{product.name}}({{Product.price}})</li>
+            {% endfor %}
+
+        </ul>
+    </div>
+    
+</div>
+{% endblock  %}
